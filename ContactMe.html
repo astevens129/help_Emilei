@@ -24,22 +24,47 @@
 <h3 id="needtogetahold">Need to get ahold of us?</h3>
 <div class="contactformcontainer">
     <script src="contactform.js"></script>
-    <form id="contactform" method="GET" novalidate>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="contact">Email or Phone number:</label><br>
-        <input type="text" id="contact" name="contact"><br>
-        <p>Choose a Service</p>
-        <input type="radio" id="logod" name="service" value="Logo Design"><label for="logod">Logo Design</label><br>
-        <input type="radio" id="digmark" name="service" value="Digital Marketing"><label for="digmark">Digital Marketing</label><br>
-        <input type="radio" id="smm" name="service" value="Social Media Management"><label for="smm">Social Media Management</label><br>
-        <input type="radio" id="bustat" name="service" value="Business Stationary"><label for="bustat">Business Stationary</label><br>
-        <input type="radio" id="graphdes" name="service" value="Graphic Design"><label for="graphdes">Graphic Design</label><br>
-        <input type="radio" id="commart" name="service" value="Commissioned Art"><label for="commart">Commissioned Art</label><br>
-        <input id="submit" type="submit" value="Submit">
-    </form>
+<form id="contactform" method="GET" novalidate>
+    <div class="form-row">
+        <div>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+        </div>
+        <div>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname">
+        </div>
+    </div>
+    <div class="form-row">
+        <div style="flex: 1 1 100%;">
+            <label for="contact">Email or Phone number:</label>
+            <input type="text" id="contact" name="contact">
+        </div>
+    </div>
+
+    <p>Choose a Service</p>
+
+    <input type="radio" id="logod" name="service" value="Logo Design">
+    <label for="logod">Logo Design</label><br>
+
+    <input type="radio" id="digmark" name="service" value="Digital Marketing">
+    <label for="digmark">Digital Marketing</label><br>
+
+    <input type="radio" id="smm" name="service" value="Social Media Management">
+    <label for="smm">Social Media Management</label><br>
+
+    <input type="radio" id="bustat" name="service" value="Business Stationary">
+    <label for="bustat">Business Stationary</label><br>
+
+    <input type="radio" id="graphdes" name="service" value="Graphic Design">
+    <label for="graphdes">Graphic Design</label><br>
+
+    <input type="radio" id="commart" name="service" value="Commissioned Art">
+    <label for="commart">Commissioned Art</label><br>
+
+    <input id="submit" type="submit" value="Submit">
+</form>
+
 </div>
 <div class="footer">
     <footer>
