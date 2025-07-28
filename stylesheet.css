@@ -209,27 +209,36 @@ input.invalid {
     display: block;
 }
 
-/* ========== Portfolio Grid ========== */
+/* Portfolio Grid */
 .photogriddy {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .photo-grid {
     display: grid;
-    gap: 10px;
-    width: 75%;
-    max-width: 800px;
-    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
 }
 
 .photo img {
-    width: 80%;
+    width: 100%;
     height: auto;
-    max-height: 600px;
+    max-width: 400px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 /* ========== About Me ========== */
 .aboutme {
