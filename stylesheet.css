@@ -1,4 +1,198 @@
-/* Modifications for form */
+/* Color codes for website elements:
+   green: #aec6ae
+   grey: #cecfce
+   dark gray: #a8a8a8
+*/
+
+/* ========== General Body Styling ========== */
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 150px;
+}
+
+/* ========== Header ========== */
+.logoheader {
+    max-height: 300px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ========== Welcome Section ========== */
+.welcome {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#earth {
+    width: 500px;
+    height: auto;
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 50px;
+}
+
+#servicesblurb {
+    font-size: 25px;
+    font-style: italic;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+/* ========== Navigation ========== */
+.nav nav {
+    background-color: #cecfce;
+    height: 50px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.nav nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.nav nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav nav li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ========== Footer ========== */
+.footer {
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer {
+    background-color: #cecfce;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+footer li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ========== Services Table ========== */
+#servicestable {
+    text-align: center;
+    background-color: #b9c4b9;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+
+#servicestable th {
+    font-size: 40px;
+    padding: 10px;
+}
+
+#servicestable td {
+    font-size: 25px;
+    padding: 10px;
+}
+
+/* ========== Contact Form ========== */
+.contactformcontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#needtogetahold {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 15px 15px;
+}
+
+#contactform {
+    background-color: #b9c4b9;
+    border: 10px solid #9da79d;
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 150px;
+    width: auto;
+}
+
+#contactform label {
+    font-size: 20px;
+    padding: 15px 0;
+    font-weight: bold;
+    display: block;
+}
+
+#contactform p {
+    font-size: 25px;
+}
+
+#fname,
+#lname,
+#contact {
+    border: 1px solid #9da79d;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#submit {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #9da79d;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    color: #747c74;
+}
+
+#submit:active {
+    color: #616861;
+}
+
+/* Form Field Feedback */
 input.valid {
     border: 2px solid green;
 }
@@ -10,6 +204,88 @@ input.invalid {
 .error-msg {
     color: red;
     font-size: 0.9em;
+    margin-top: 2px;
     margin-bottom: 10px;
     display: block;
+}
+
+/* ========== Portfolio Grid ========== */
+.photogriddy {
+    display: grid;
+    place-items: center;
+}
+
+.photo-grid {
+    display: grid;
+    gap: 10px;
+    width: 75%;
+    max-width: 800px;
+    align-content: center;
+}
+
+.photo img {
+    width: 80%;
+    height: auto;
+    max-height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== About Me ========== */
+.aboutme {
+    background-color: #b9c4b9;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    padding: 20px;
+    text-align: center;
+}
+
+#aboutmeh3 {
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+#aboutmep {
+    margin: 20px auto;
+    padding: 30px;
+    font-size: 25px;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* ========== Responsive Layout ========== */
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    #servicesblurb,
+    #earth {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    #contactform {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #fname,
+    #lname,
+    #contact {
+        width: 100%;
+    }
+
+    #submit {
+        width: 100%;
+    }
+
+    footer ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
