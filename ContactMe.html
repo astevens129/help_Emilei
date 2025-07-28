@@ -1,0 +1,119 @@
+Contact Me
+
+What Looks Good
+•	External CSS is linked.
+•	You've included a form with text inputs, radio buttons, and a submit button — great!
+•	Includes required external links in the footer.
+•	Descriptive content and form labels.
+•	Navigation and logo are consistent with other pages.
+Fixes Needed
+1.  Invalid HTML Structure
+•	<head> is inside <body>, which is incorrect.
+•	<header> and <nav> appear before the <body> tag opens.
+•	There should only be one <body>, and everything visible on the page should go inside it.
+Fix: Proper structure:
+<html>
+<head> ... </head>
+<body>
+    <header>...</header>
+    <nav>...</nav>
+    <main>...</main>
+    <footer>...</footer>
+</body>
+</html>
+2. <p> wrapping <ul> inside <nav>
+This has been repeated from other pages — not valid.
+Fix:
+<nav>
+    <ul>...</ul>
+</nav>
+3. Form Best Practices
+•	You should use a <fieldset> and <legend> for better structure and accessibility.
+•	Your form doesn’t currently do anything when submitted.
+**You mentioned using contactform.js, but when I open in devtools it is empty.
+4. Add <meta name="description">
+In your <head>: <meta name="description" content="Contact Emilei’s Art for custom design, marketing, and art services. Fill out the form to request more information.">
+
+Corrected & Enhanced Version of ContactMe.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="description" content="Contact Emilei’s Art for custom design, marketing, and art services. Fill out the form to request more information.">
+    <script src="contactform.js" defer></script>
+</head>
+<body>
+    <header class="logoheader">
+        <a href="index.html">
+            <img class="logohead" src="logobanner.png" alt="Emilei's Art logo">
+        </a>
+    </header>
+
+    <div class="nav">
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <h3 id="needtogetahold">Need to get ahold of us?</h3>
+        <div class="contactformcontainer">
+            <form id="contactform" method="GET">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" required><br>
+
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" required><br>
+
+                    <label for="contact">Email or Phone number:</label><br>
+                    <input type="text" id="contact" name="contact" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Choose a Service</legend>
+                    <input type="radio" id="logod" name="service" value="Logo Design">
+                    <label for="logod">Logo Design</label><br>
+
+                    <input type="radio" id="digmark" name="service" value="Digital Marketing">
+                    <label for="digmark">Digital Marketing</label><br>
+
+                    <input type="radio" id="smm" name="service" value="Social Media Management">
+                    <label for="smm">Social Media Management</label><br>
+
+                    <input type="radio" id="bustat" name="service" value="Business Stationary">
+                    <label for="bustat">Business Stationary</label><br>
+
+                    <input type="radio" id="graphdes" name="service" value="Graphic Design">
+                    <label for="graphdes">Graphic Design</label><br>
+
+                    <input type="radio" id="commart" name="service" value="Commissioned Art">
+                    <label for="commart">Commissioned Art</label><br>
+                </fieldset>
+
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+
+    <div class="footer">
+        <footer aria-label="Social Media Links">
+            <ul>
+                <li><a href="https://www.facebook.com/share/18UL5TeLSc/?mibextid=wwXIfr">Facebook</a></li>
+                <li><a href="https://www.instagram.com/emileis.art?igsh=YnJweGl0YXE1Z2J1&utm_source=qr">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@emileisart?_t=ZP-8te1MAV1EkR&_r=1">TikTok</a></li>
+                <li><a href="https://www.linkedin.com/in/emilei-russell-89b0812a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
