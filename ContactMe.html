@@ -31,18 +31,23 @@
             <form id="contactform" method="GET">
                 <fieldset>
                     <legend>Contact Information</legend>
+
                     <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname" required><br>
+                    <input type="text" id="fname" name="fname" required>
+                    <span id="fnameError" class="error-msg"></span><br>
 
                     <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname" required><br>
+                    <input type="text" id="lname" name="lname" required>
+                    <span id="lnameError" class="error-msg"></span><br>
 
                     <label for="contact">Email or Phone number:</label><br>
                     <input type="text" id="contact" name="contact" required>
+                    <span id="contactError" class="error-msg"></span><br>
                 </fieldset>
 
                 <fieldset>
                     <legend>Choose a Service</legend>
+
                     <input type="radio" id="logod" name="service" value="Logo Design">
                     <label for="logod">Logo Design</label><br>
 
@@ -60,6 +65,8 @@
 
                     <input type="radio" id="commart" name="service" value="Commissioned Art">
                     <label for="commart">Commissioned Art</label><br>
+
+                    <span id="serviceError" class="error-msg"></span>
                 </fieldset>
 
                 <input id="submit" type="submit" value="Submit">
@@ -79,3 +86,4 @@
     </div>
 </body>
 </html>
+
