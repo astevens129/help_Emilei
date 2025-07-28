@@ -1,89 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="stylesheet.css">
     <meta charset="UTF-8">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <meta name="description" content="Contact Emilei’s Art for custom design, marketing, and art services. Fill out the form to request more information.">
-    <script src="contactform.js" defer></script>
 </head>
 <body>
-    <header class="logoheader">
-        <a href="index.html">
-            <img class="logohead" src="logobanner.png" alt="Emilei's Art logo">
-        </a>
-    </header>
-
-    <div class="nav">
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="ContactMe.html">Contact Me</a></li>
-                <li><a href="AboutMe.html">About Me</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <main>
-        <h3 id="needtogetahold">Need to get ahold of us?</h3>
-        <div class="contactformcontainer">
-            <form id="contactform" method="GET">
-                <fieldset>
-                    <legend>Contact Information</legend>
-
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname" required>
-                    <span id="fnameError" class="error-msg"></span><br>
-
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname" required>
-                    <span id="lnameError" class="error-msg"></span><br>
-
-                    <label for="contact">Email or Phone number:</label><br>
-                    <input type="text" id="contact" name="contact" required>
-                    <span id="contactError" class="error-msg"></span><br>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Choose a Service</legend>
-
-                    <input type="radio" id="logod" name="service" value="Logo Design">
-                    <label for="logod">Logo Design</label><br>
-
-                    <input type="radio" id="digmark" name="service" value="Digital Marketing">
-                    <label for="digmark">Digital Marketing</label><br>
-
-                    <input type="radio" id="smm" name="service" value="Social Media Management">
-                    <label for="smm">Social Media Management</label><br>
-
-                    <input type="radio" id="bustat" name="service" value="Business Stationary">
-                    <label for="bustat">Business Stationary</label><br>
-
-                    <input type="radio" id="graphdes" name="service" value="Graphic Design">
-                    <label for="graphdes">Graphic Design</label><br>
-
-                    <input type="radio" id="commart" name="service" value="Commissioned Art">
-                    <label for="commart">Commissioned Art</label><br>
-
-                    <span id="serviceError" class="error-msg"></span>
-                </fieldset>
-
-                <input id="submit" type="submit" value="Submit">
-            </form>
-        </div>
-    </main>
-
-    <div class="footer">
-        <footer aria-label="Social Media Links">
-            <ul>
-                <li><a href="https://www.facebook.com/share/18UL5TeLSc/?mibextid=wwXIfr">Facebook</a></li>
-                <li><a href="https://www.instagram.com/emileis.art?igsh=YnJweGl0YXE1Z2J1&utm_source=qr">Instagram</a></li>
-                <li><a href="https://www.tiktok.com/@emileisart?_t=ZP-8te1MAV1EkR&_r=1">TikTok</a></li>
-                <li><a href="https://www.linkedin.com/in/emilei-russell-89b0812a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></li>
-            </ul>
-        </footer>
-    </div>
+<header class="logoheader">
+    <a href="index.html">
+        <img class="logohead" src="images/Emileis_art_logo_banner.png" alt="Emilei's Art logo">
+    </a>
+</header>
+<div class="nav">
+    <nav>
+        <ul>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="ContactMe.html">Contact Me</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+</div>
+<h3 id="needtogetahold">Need to get ahold of us?</h3>
+<div class="contactformcontainer">
+    <script src="contactform.js"></script>
+    <form id="contactform" method="GET" novalidate>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="contact">Email or Phone number:</label><br>
+        <input type="text" id="contact" name="contact"><br>
+        <p>Choose a Service</p>
+        <input type="radio" id="logod" name="service" value="Logo Design"><label for="logod">Logo Design</label><br>
+        <input type="radio" id="digmark" name="service" value="Digital Marketing"><label for="digmark">Digital Marketing</label><br>
+        <input type="radio" id="smm" name="service" value="Social Media Management"><label for="smm">Social Media Management</label><br>
+        <input type="radio" id="bustat" name="service" value="Business Stationary"><label for="bustat">Business Stationary</label><br>
+        <input type="radio" id="graphdes" name="service" value="Graphic Design"><label for="graphdes">Graphic Design</label><br>
+        <input type="radio" id="commart" name="service" value="Commissioned Art"><label for="commart">Commissioned Art</label><br>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</div>
+<div class="footer">
+    <footer>
+        <ul>
+            <li><a href="https://www.facebook.com/share/18UL5TeLSc/?mibextid=wwXIfr">Facebook</a></li>
+            <li><a href="https://www.instagram.com/emileis.art?igsh=YnJweGl0YXE1Z2J1&utm_source=qr">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@emileisart?_t=ZP-8te1MAV1EkR&_r=1">Tiktok</a></li>
+            <li><a href="https://www.linkedin.com/in/emilei-russell-89b0812a7">LinkedIn</a></li>
+        </ul>
+    </footer>
+</div>
 </body>
 </html>
-
