@@ -110,24 +110,52 @@ footer li a:hover {
     text-decoration: underline;
 }
 
-/* ========== Services Table ========== */
+/* Services Table Styling */
 #servicestable {
-    text-align: center;
-    background-color: #b9c4b9;
-    padding: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
     margin-top: 30px;
     margin-bottom: 150px;
 }
 
+#servicestable table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background-color: #b9c4b9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 #servicestable th {
-    font-size: 40px;
-    padding: 10px;
+    background-color: #9da79d;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
 }
 
 #servicestable td {
-    font-size: 25px;
-    padding: 10px;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 20px;
+    border-top: 1px solid #a0b0a0;
 }
+
+@media screen and (max-width: 600px) {
+    #servicestable table, 
+    #servicestable th, 
+    #servicestable td {
+        font-size: 18px;
+    }
+
+    #servicestable {
+        padding: 10px;
+    }
+}
+
 
 /* ========== Contact Form ========== */
 .contactformcontainer {
