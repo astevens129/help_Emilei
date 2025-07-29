@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <style>
-        .photogriddy h2 {
+        .portfolio-title {
             text-align: center;
-            margin-bottom: 20px;
             font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .portfolio-title {
+                font-size: 28px;
+            }
         }
     </style>
 </head>
@@ -29,7 +35,7 @@
         </nav>
     </div>
     <section class="photogriddy">
-        <h2>My Portfolio</h2>
+        <h2 class="portfolio-title">My Portfolio</h2>
         <div class="photo-grid">
             <div class="photo"><img src="images/The_Sanctuary_Spa_Spa.jpg" alt="The Sanctuary Japanese Head Spa logo"></div>
             <div class="photo"><img src="images/Open_Gait_Travel_Tours_Logo.PNG" alt="Open Gait Horse Logo"></div>
