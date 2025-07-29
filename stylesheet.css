@@ -268,6 +268,13 @@ input.invalid {
 }
 
 /* Portfolio Grid */
+.portfolio-title {
+    text-align: center;
+    font-size: 42px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
 .photogriddy {
     display: flex;
     justify-content: center;
@@ -366,4 +373,9 @@ input.invalid {
         display: block;
         margin: 10px 0;
     }
+@media screen and (max-width: 600px) {
+    .portfolio-title {
+        font-size: 32px;
+    }
 }
+
