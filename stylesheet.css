@@ -277,7 +277,8 @@ input.invalid {
 
 .photogriddy {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
 }
 
